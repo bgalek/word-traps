@@ -1,8 +1,5 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import Container from "@material-ui/core/Container";
-
-interface AppLayoutProps extends React.PropsWithChildren<any> {
-}
 
 const style = {
     width: '100%',
@@ -14,15 +11,12 @@ const style = {
     textAlign: 'center' as 'center',
 }
 
-function ColumnLayout(props: AppLayoutProps) {
-    return (
-        <Container>
-            <main style={style}>
-                {props.children}
-            </main>
-        </Container>
-
-    );
-}
+const ColumnLayout: FunctionComponent = (props) => (
+    <Container>
+        <main style={style}>
+            {props.children}
+        </main>
+    </Container>
+);
 
 export default ColumnLayout;

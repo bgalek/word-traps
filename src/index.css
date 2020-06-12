@@ -1,0 +1,15 @@
+html, body, #root {
+    height: 100%;
+    background-color: #d0d0d0;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 100;
+    font-family: Bungee, serif;
+}
+
+#root > * {
+    width: 100%;
+    height: 100%;
+}
